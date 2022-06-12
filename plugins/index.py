@@ -91,7 +91,7 @@ async def gen_link_batch(bot, message):
                 outlist.append(file)
         except:
             pass
-        if not og_msg % 5:
+        if not og_msg % 20:
             try:
                 await sts.edit(FRMT.format(total=l_msg_id-f_msg_id, current=tot, rem=((l_msg_id-f_msg_id) - tot), sts="Saving Messages"))
             except:
